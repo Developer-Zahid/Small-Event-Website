@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/dropzone.css?asdsd">
+        <link rel="stylesheet" href="css/style.css?lksa">
+
+        <title>Logo.</title>
+    </head>
+    <body class="pxp-dark-mode">
+        <header class="pxp-header fixed-top pxp-animate pxp-no-bg">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-5 col-md-2">
+                        <a href="./" class="pxp-logo text-decoration-none">Logo.</a>
+                    </div>
+                    <nav class="col-2 col-md-8 text-center">
+                        <ul class="pxp-nav list-inline">
+                            <li class="list-inline-item">
+                                <a href="./">Home</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">Properties</a>
+                                <ul class="pxp-nav-sub rounded-lg">
+                                    <li><a href="properties.html">All Properties</a></li>
+                                    <li><a href="single-property.html">Single Property</a></li>
+                                    <li><a href="submit-property.html">Submit New Property</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">Agents</a>
+                                <ul class="pxp-nav-sub rounded-lg">
+                                    <li><a href="agents.html">All Agents</a></li>
+                                    <li><a href="single-agent.html">Single Agent</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">Blog</a>
+                                <ul class="pxp-nav-sub rounded-lg">
+                                    <li><a href="blog.html">All Blog Posts</a></li>
+                                    <li><a href="single-post.html">Single Blog Post</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item pxp-is-last"><a href="contact.html">Contact Us</a></li>
+                            <li class="list-inline-item pxp-has-btns">
+                                <div class="pxp-user-btns">
+                                    <a href="#" class="pxp-user-btns-signup pxp-signup-trigger">Sign Up</a>
+                                    <a href="#" class="pxp-user-btns-login pxp-signin-trigger">Sign In</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="col-5 col-md-2 text-right">
+                        <a href="javascript:void(0);" class="pxp-header-nav-trigger"><span class="fa fa-bars"></span></a>
+                        <a href="javascript:void(0);" class="pxp-header-user pxp-signin-trigger"><span class="fa fa-user-o"></span></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="pxp-content">
+            <div class="pxp-submit-property pxp-content-wrapper mt-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-7">
+                            <h1 class="pxp-page-header">Add New Property</h1>
+                        </div>
+                    </div>
+                    <div class="row mt-4 mt-md-5">
+                        <div class="col-sm-12 col-lg-8">
+                            <h3>Basic Information</h3>
+                            <div class="mt-3 mt-md-4">
+                                <div class="form-group">
+                                    <label for="pxp-submit-property-title">Title</label>
+                                    <input type="text" class="form-control" id="pxp-submit-property-title" placeholder="Enter property title">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pxp-submit-property-overview">Overview</label>
+                                    <textarea class="form-control" id="pxp-submit-property-overview" rows="6" placeholder="Describe the property..."></textarea>
+                                </div>
+                            </div>
+
+                            <h3 class="mt-4 mt-md-5">Key Details</h3>
+                            <div class="row mt-3 mt-md-4">
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="pxp-submit-property-type">Type</label>
+                                        <select class="custom-select" id="pxp-submit-property-type">
+                                            <option value="">Select type</option>
+                                            <option value="">Apartment</option>
+                                            <option value="">House</option>
+                                            <option value="">Townhome</option>
+                                            <option value="">Multi-Family</option>
+                                            <option value="">Land</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="pxp-submit-property-status">Status</label>
+                                        <select class="custom-select" id="pxp-submit-property-status">
+                                            <option value="">Select status</option>
+                                            <option value="">For Rent</option>
+                                            <option value="">For Sale</option>
+                                            <option value="">To Let</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="pxp-submit-property-built">Year Built</label>
+                                        <input type="text" class="form-control" id="pxp-submit-property-built">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="pxp-submit-property-stories">Stories</label>
+                                        <input type="text" class="form-control" id="pxp-submit-property-stories">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="pxp-submit-property-rooms">Room Count</label>
+                                        <input type="text" class="form-control" id="pxp-submit-property-rooms">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="pxp-submit-property-parking">Parking Spaces</label>
+                                        <input type="text" class="form-control" id="pxp-submit-property-parking">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="mt-4 mt-md-5">Amenities</h3>
+                            <div class="row mt-3 mt-md-4">
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="form-group">
+                                        <div class="checkbox custom-checkbox">
+                                            <label><input type="checkbox" value="1"><span class="fa fa-wifi"></span> Internet</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="form-group">
+                                        <div class="checkbox custom-checkbox">
+                                            <label><input type="checkbox" value="1"><span class="fa fa-car"></span> Garage</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="form-group">
+                                        <div class="checkbox custom-checkbox">
+                                            <label><input type="checkbox" value="1"><span class="fa fa-sun-o"></span> Air Conditioning</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="form-group">
+                                        <div class="checkbox custom-checkbox">
+                                            <label><input type="checkbox" value="1"><span class="fa fa-bullseye"></span> Dishwasher</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="form-group">
+                                        <div class="checkbox custom-checkbox">
+                                            <label><input type="checkbox" value="1"><span class="fa fa-recycle"></span> Disposal</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="form-group">
+                                        <div class="checkbox custom-checkbox">
+                                            <label><input type="checkbox" value="1"><span class="fa fa-clone"></span> Balcony</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="form-group">
+                                        <div class="checkbox custom-checkbox">
+                                            <label><input type="checkbox" value="1"><span class="fa fa-futbol-o"></span> Gym</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="form-group">
+                                        <div class="checkbox custom-checkbox">
+                                            <label><input type="checkbox" value="1"><span class="fa fa-smile-o"></span> Playroom</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="form-group">
+                                        <div class="checkbox custom-checkbox">
+                                            <label><input type="checkbox" value="1"><span class="fa fa-glass"></span> Bar</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="mt-4 mt-md-5">Photo Gallery</h3>
+                            <form class="dropzone needsclick mt-3 mt-md-4" id="demo-upload" action="/upload">
+                                <div class="dz-message needsclick">
+                                    Drop files here or click to upload.<br>
+                                    <span class="note needsclick">This is just a demo dropzone. Selected files are <strong>not</strong> actually uploaded.</span>
+                                </div>
+                            </form>
+                            
+                        </div>
+                        <div class="col-sm-12 col-lg-4">
+                            <div class="pxp-submit-property-side rounded-lg mt-4 mt-md-5 mt-lg-0">
+                                <h3 class="text-white">Main Details</h3>
+                                <div class="row mt-3 mt-md-4">
+                                    <div class="col-sm-12 col-md-6">
+                                        <div class="form-group">
+                                            <label class="text-white" for="pxp-submit-property-price">Price</label>
+                                            <input type="text" class="form-control" id="pxp-submit-property-price" placeholder="Enter price">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6">
+                                        <div class="form-group">
+                                            <label class="text-white" for="pxp-submit-property-plabel">Price Label</label>
+                                            <input type="text" class="form-control" id="pxp-submit-property-plabel" placeholder="Enter price label">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-4">
+                                        <div class="form-group">
+                                            <label class="text-white" for="pxp-submit-property-beds">Beds</label>
+                                            <input type="text" class="form-control" id="pxp-submit-property-beds" placeholder="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4">
+                                        <div class="form-group">
+                                            <label class="text-white" for="pxp-submit-property-baths">Baths</label>
+                                            <input type="text" class="form-control" id="pxp-submit-property-baths" placeholder="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4">
+                                        <div class="form-group">
+                                            <label class="text-white" for="pxp-submit-property-size">Size (sq ft)</label>
+                                            <input type="text" class="form-control" id="pxp-submit-property-size" placeholder="0">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pxp-submit-property-side rounded-lg mt-4 mt-md-5">
+                                <h3 class="text-white">Location</h3>
+                                <div class="mt-3 mt-md-4">
+                                    <div class="form-group">
+                                        <label class="text-white" for="pxp-submit-property-address">Address</label>
+                                        <input type="text" class="form-control" id="pxp-submit-property-address" placeholder="Enter address">
+                                    </div>
+                                    <div id="pxp-submit-property-map"></div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+
+                    <div class="mt-4 mt-md-5">
+                        <a href="#" class="pxp-submit-property-btn">Submit Property</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="pxp-footer pt-100 pb-100 mt-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="pxp-footer-logo">Votre logo</div>
+                        <div class="pxp-footer-address mt-2">
+                            90 Fifth Avenue, 3rd Floor<br>
+                            San Francisco, CA 1980<br>
+                            (123) 456-7890
+                        </div>
+                        <div class="pxp-footer-social mt-2">
+                            <a href="#"><span class="fa fa-instagram"></span></a>
+                            <a href="#"><span class="fa fa-facebook-square"></span></a>
+                            <a href="#"><span class="fa fa-twitter"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-8">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4">
+                                <h4 class="pxp-footer-header mt-4 mt-lg-0">Company</h4>
+                                <ul class="list-unstyled pxp-footer-links mt-2">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Agents</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Demos</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <h4 class="pxp-footer-header mt-4 mt-lg-0">Actions</h4>
+                                <ul class="list-unstyled pxp-footer-links mt-2">
+                                    <li><a href="#">Buy Properties</a></li>
+                                    <li><a href="#">Rent Properties</a></li>
+                                    <li><a href="#">Sell Properties</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <h4 class="pxp-footer-header mt-4 mt-lg-0">Explore</h4>
+                                <ul class="list-unstyled pxp-footer-links mt-2">
+                                    <li><a href="#">Homes for Rent</a></li>
+                                    <li><a href="#">Apartments for Rent</a></li>
+                                    <li><a href="#">Homes for Sale</a></li>
+                                    <li><a href="#">Apartments for Sale</a></li>
+                                    <li><a href="#">CRM</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pxp-footer-bottom mt-2">
+                    <div><a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></div>
+                    <div class="pxp-footer-copyright">&copy; Resideo. All Rights Reserved. 2021</div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="modal fade" id="pxp-signin-modal" tabindex="-1" role="dialog" aria-labelledby="pxpSigninModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h5 class="modal-title" id="pxpSigninModal">Welcome back!</h5>
+                        <form class="mt-4">
+                            <div class="form-group">
+                                <label for="pxp-signin-email">Email</label>
+                                <input type="text" class="form-control" id="pxp-signin-email" placeholder="Enter your email address">
+                            </div>
+                            <div class="form-group">
+                                <label for="pxp-signin-pass">Password</label>
+                                <input type="password" class="form-control" id="pxp-signin-pass" placeholder="Enter your password">
+                            </div>
+                            <div class="form-group">
+                                <a href="#" class="pxp-agent-contact-modal-btn">Sign In</a>
+                            </div>
+                            <div class="form-group mt-4 text-center pxp-modal-small">
+                                <a href="#" class="pxp-modal-link">Forgot password</a>
+                            </div>
+                            <div class="text-center pxp-modal-small">
+                                New to Resideo? <a href="javascript:void(0);" class="pxp-modal-link pxp-signup-trigger">Create an account</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="pxp-signup-modal" tabindex="-1" role="dialog" aria-labelledby="pxpSignupModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h5 class="modal-title" id="pxpSignupModal">Create an account</h5>
+                        <form class="mt-4">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="pxp-signup-firstname">First Name</label>
+                                        <input type="text" class="form-control" id="pxp-signup-firstname" placeholder="Enter first name">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="pxp-signup-lastname">Last Name</label>
+                                        <input type="text" class="form-control" id="pxp-signup-lastname" placeholder="Enter last name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="pxp-signup-email">Email</label>
+                                <input type="text" class="form-control" id="pxp-signup-email" placeholder="Enter your email address">
+                            </div>
+                            <div class="form-group">
+                                <label for="pxp-signup-pass">Password</label>
+                                <input type="password" class="form-control" id="pxp-signup-pass" placeholder="Create a password">
+                            </div>
+                            <div class="form-group">
+                                <a href="#" class="pxp-agent-contact-modal-btn">Sign Up</a>
+                            </div>
+                            <div class="text-center mt-4 pxp-modal-small">
+                                Already have an account? <a href="javascript:void(0);" class="pxp-modal-link pxp-signin-trigger">Sign in</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_KEY_HERE&amp;libraries=geometry&amp;libraries=places"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/submit-property-map.js"></script>
+        <script src="js/dropzone.js"></script>
+        <script src="js/main.js?asdsadwe"></script>
+    </body>
+</html>
