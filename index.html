@@ -165,11 +165,31 @@
             </div>
 
             <div class="container mt-100">
-                <h2 class="pxp-section-h2">Featured Properties</h2>
-                <p class="pxp-text-light">Browse our latest hot offers</p>
+                <div class="row align-items-end">
+                    <div class="col-lg-auto">
+                        <h2 class="pxp-section-h2">Featured Properties</h2>
+                        <p class="pxp-text-light">Browse our latest hot offers</p>
+                    </div>
+                    <div class="col-lg">
+                        <ul class="filter-list nav justify-content-lg-end">
+                            <li class="nav-item filter-list__item">
+                                <button type="button" class="filter-list__btn active" data-toggle="pill" data-filter="*">Tous</button>
+                            </li>
+                            <li class="nav-item filter-list__item">
+                                <button type="button" class="filter-list__btn" data-toggle="pill" data-filter=".featured-1">Vente</button>
+                            </li>
+                            <li class="nav-item filter-list__item">
+                                <button type="button" class="filter-list__btn" data-toggle="pill" data-filter=".featured-2">Location</button>
+                            </li>
+                            <li class="nav-item filter-list__item">
+                                <button type="button" class="filter-list__btn" data-toggle="pill" data-filter=".featured-3">Événements</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-                <div class="row mt-4 mt-md-5">
-                    <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="filter-grid row mt-4 mt-md-5">
+                    <div class="filter-grid__item col-lg-4 col-md-6 featured-1 featured-3">
                         <a href="single-property.html" class="pxp-prop-card-1 rounded-lg mb-4">
                             <div class="pxp-prop-card-1-fig pxp-cover" style="background-image: url(./assets/images/properties/prop-4-1-gallery.jpg);"></div>
                             <div class="pxp-prop-card-1-gradient pxp-animate"></div>
@@ -181,7 +201,7 @@
                             <div class="pxp-prop-card-1-details-cta text-uppercase">View Details</div>
                         </a>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="filter-grid__item col-lg-4 col-md-6 featured-2">
                         <a href="single-property.html" class="pxp-prop-card-1 rounded-lg mb-4">
                             <div class="pxp-prop-card-1-fig pxp-cover" style="background-image: url(./assets/images/properties/prop-5-1-gallery.jpg);"></div>
                             <div class="pxp-prop-card-1-gradient pxp-animate"></div>
@@ -193,7 +213,7 @@
                             <div class="pxp-prop-card-1-details-cta text-uppercase">View Details</div>
                         </a>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="filter-grid__item col-lg-4 col-md-6 featured-3">
                         <a href="single-property.html" class="pxp-prop-card-1 rounded-lg mb-4">
                             <div class="pxp-prop-card-1-fig pxp-cover" style="background-image: url(./assets/images/properties/prop-6-1-gallery.jpg);"></div>
                             <div class="pxp-prop-card-1-gradient pxp-animate"></div>
@@ -205,7 +225,7 @@
                             <div class="pxp-prop-card-1-details-cta text-uppercase">View Details</div>
                         </a>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="filter-grid__item col-lg-4 col-md-6 featured-1">
                         <a href="single-property.html" class="pxp-prop-card-1 rounded-lg mb-4">
                             <div class="pxp-prop-card-1-fig pxp-cover" style="background-image: url(./assets/images/properties/prop-10-1-gallery.jpg);"></div>
                             <div class="pxp-prop-card-1-gradient pxp-animate"></div>
@@ -217,7 +237,7 @@
                             <div class="pxp-prop-card-1-details-cta text-uppercase">View Details</div>
                         </a>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="filter-grid__item col-lg-4 col-md-6 featured-3">
                         <a href="single-property.html" class="pxp-prop-card-1 rounded-lg mb-4">
                             <div class="pxp-prop-card-1-fig pxp-cover" style="background-image: url(./assets/images/properties/prop-11-1-gallery.jpg);"></div>
                             <div class="pxp-prop-card-1-gradient pxp-animate"></div>
@@ -229,7 +249,7 @@
                             <div class="pxp-prop-card-1-details-cta text-uppercase">View Details</div>
                         </a>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="filter-grid__item col-lg-4 col-md-6 featured-2">
                         <a href="single-property.html" class="pxp-prop-card-1 rounded-lg mb-4">
                             <div class="pxp-prop-card-1-fig pxp-cover" style="background-image: url(./assets/images/properties/prop-12-1-gallery.jpg);"></div>
                             <div class="pxp-prop-card-1-gradient pxp-animate"></div>
@@ -529,7 +549,8 @@
         <script src="js/jquery-3.4.1.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/isotope.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
-        <script src="js/main.js?lasjkj"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

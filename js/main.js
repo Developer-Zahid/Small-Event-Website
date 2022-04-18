@@ -667,6 +667,30 @@
         });
     }
 
+    /* Isotope Init */
+    function isotopeFilterInit() {
+        $(".filter-grid").isotope({
+            itemSelector: ".filter-grid__item",
+            layoutMode: "fitRows",
+            masonry: {
+                isFitWidth: true
+            }
+        });
+
+        // filter items on button click
+        $(".filter-list__btn").on("click", function () {
+            let filterValue = $(this).attr("data-filter");
+            $(".filter-grid").isotope({ filter: filterValue });
+        });
+    };
+
+    if ($('.filter-grid').length > 0){
+        $(document).ready(function () {
+            isotopeFilterInit();
+        });
+    }
+
+
     $('.pxp-testim-2-caption-carousel .pxp-carousel-control-next').click(function(e) { 
         $('.pxp-testim-2-caption-carousel').carousel('next');
     });

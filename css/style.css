@@ -34,8 +34,9 @@
  * 31.0 - Services tabs section
  * 32.0 - Search properties section
  * 33.0 - Promo slider section
- * 33.0 - Footer
- * 34.0 - Media queries
+ * 34.0 - Footer
+ * 35.0 - Filter Nav List
+ * 36.0 - Media queries
  */
 
 /**
@@ -5832,7 +5833,58 @@ a.pxp-services-tabs-content-item:hover .pxp-services-tabs-content-item-cta {
 }
 
 /**
- * 35.0 - Media queries
+ * 35.0 - Filter Nav List
+ */
+
+ .filter-list__item:not(:last-child){
+     margin-right: 60px;
+ }
+
+.filter-list__btn{
+    position: relative;
+    display: inline-block;
+    color: #333333 !important;
+    text-transform: capitalize;
+    background-color: transparent;
+    padding: 4px;
+    border: 0;
+    box-shadow: none;
+    outline: 0 !important;
+    opacity: 0.7;
+    transition:
+        color .2s ease-in-out,
+        opacity .2s ease-in-out;
+}
+
+.filter-list__btn:focus,
+.filter-list__btn:hover,
+.filter-list__btn.active
+{
+    opacity: 1;
+    text-decoration: none;
+}
+
+.filter-list__btn::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    border-radius: 1rem;
+    background-color: #333333;
+    transition: width .2s ease-in-out;
+}
+
+.filter-list__btn:focus:after,
+.filter-list__btn:hover:after,
+.filter-list__btn.active::after
+{
+    width: 80%;
+}
+
+/**
+ * 36.0 - Media queries
  */
 
 @media (min-width: 576px) {
@@ -5841,6 +5893,13 @@ a.pxp-services-tabs-content-item:hover .pxp-services-tabs-content-item-cta {
         max-width: 400px;
     }
 }
+
+@media (max-width: 575px) {
+    .filter-list__item:not(:last-child){
+        margin-right: 15px;
+    }
+}
+
 @media screen and (max-width: 1799px) {
     .pxp-gallery-carousel-left-arrow {
         left: 300px;
